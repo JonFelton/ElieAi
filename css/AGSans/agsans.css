@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'alegreya_sansbold';
+    src: url('alegreyasans-bold-webfont.eot');
+    src: url('alegreyasans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AlegreyaSans700.woff') format('woff'),
+         url('alegreyasans-bold-webfont.ttf') format('truetype'),
+         url('alegreyasans-bold-webfont.svg#alegreya_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'alegreya_sansbold_italic';
+    src: url('alegreyasans-bolditalic-webfont.eot');
+    src: url('alegreyasans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AlegreyaSans700Italic.woff') format('woff'),
+         url('alegreyasans-bolditalic-webfont.ttf') format('truetype'),
+         url('alegreyasans-bolditalic-webfont.svg#alegreya_sansbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'alegreya_sansitalic';
+    src: url('alegreyasans-italic-webfont.eot');
+    src: url('alegreyasans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AlegreyaSans400Italic.woff') format('woff'),
+         url('alegreyasans-italic-webfont.ttf') format('truetype'),
+         url('alegreyasans-italic-webfont.svg#alegreya_sansitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alegreya_sansregular';
+    src: url('alegreyasans-regular-webfont.eot');
+    src: url('alegreyasans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AlegreyaSans400.woff') format('woff'),
+         url('alegreyasans-regular-webfont.ttf') format('truetype'),
+         url('alegreyasans-regular-webfont.svg#alegreya_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'alegreya_sanslight';
+    src: url('alegreyasans-light-webfont.eot');
+    src: url('alegreyasans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AlegreyaSans300.woff') format('woff'),
+         url('alegreyasans-light-webfont.ttf') format('truetype'),
+         url('alegreyasans-light-webfont.svg#alegreya_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alegreya_sanslight_italic';
+    src: url('alegreyasans-lightitalic-webfont.eot');
+    src: url('alegreyasans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('AlegreyaSans300Italic.woff') format('woff'),
+         url('alegreyasans-lightitalic-webfont.ttf') format('truetype'),
+         url('alegreyasans-lightitalic-webfont.svg#alegreya_sanslight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

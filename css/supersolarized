@@ -1,0 +1,16 @@
+CSS:Property:
+
+entity.name.tag.css, support.type.property-name.css, meta.property-name.css
+
+CSS: {}
+punctuation.section.property-list.css
+
+CSS: Numeric Value
+meta.property-value.css constant.numeric.css, keyword.other.unit.css,constant.other.color.rgb-value.css
+
+CSS: Value
+meta.property-value.css
+
+CSS: Pseudo
+entity.other.attribute-name.pseudo-element.css, entity.other.attribute-name.pseudo-class.css
+

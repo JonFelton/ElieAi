@@ -1,0 +1,340 @@
+$hover_color: #ABD6D5;
+$sidebar_color:#C5E6E5;
+$darkbrown: #6E4A30;
+$mediumbrown: #75563F;
+$lightbrown: #DBC9B6;
+$text_color: #423124;
+
+
+@import url('normalize.css');
+
+@import url('AGSans/agsans.css');
+
+
+body, html { margin: 0; padding: 0; }
+
+html {
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  background: $hover_color;
+}
+
+body {
+  font-family: 'alegreya_sansregular', Calibri, sans-serif;
+  color:$text_color;
+}
+
+
+/* ======= Structure ======= */
+
+.wrapper, .footer {
+  width: 100%;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.wrapper {
+  background: #FBF7F4;
+  text-align: left;
+  box-shadow: 0 0 10px -5px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  z-index: 20;
+}
+
+.footer {
+  margin: 0 auto;
+  font-size:1.1em;
+  height: 3em;
+  display: block;
+  background:$lightbrown;
+  box-shadow: 0 5px 10px -5px;
+  z-index: 20;
+}
+
+.sidebar ,
+.main-content {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.sidebar {
+  background-color: $sidebar_color;
+  width: 31%;
+  margin-top: 1em;
+  padding: 20px 0 40px 0;
+  float: left;
+}
+
+.main-content {
+  width: 65%;
+  float: left;
+
+}
+
+
+/* ====== NAV ====== */
+
+.titlebar {
+  width: 100%;
+  height: 40%;
+  margin: 0 auto;
+  padding: 0 0 10px 0;
+}
+
+header {
+  font-size: 1.1em;
+  height: 2em;
+  border-bottom: 1px dashed $darkbrown;
+  border-top: 1px dashed $darkbrown;
+  z-index:30;
+  display: block;
+}
+
+nav {
+
+  ul {
+    padding:0;
+    margin:0 auto;
+    font-weight: 300;
+    text-align: center;
+  }
+  li {
+    list-style: none;
+    display: inline-block;
+  }
+  span{
+    color: #C4A889;
+    transition: .2s;
+  }
+  a {
+    text-decoration: none;
+    color: $mediumbrown;
+    transition: .2s;
+    line-height: 2em;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+      color: $hover_color;
+      > span{
+        color: $hover_color;
+      }
+    }
+  }
+
+
+  li + li {
+    margin-left: 3%;
+  }
+
+}
+
+/* ==== Footer ===*/
+
+.footer p {
+  margin: 0 auto;
+  line-height: 3em;
+  color: $darkbrown;
+}
+
+/* ==== Clearfix ==== */
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ====== Text ====== */
+
+.italicize {font-family: 'alegreya_sansitalic';}
+
+h2, h3, p {
+  margin: 1em 10px;
+}
+
+.sidebar h2, .sidebar p {
+  margin:1em 40px 0 40px;
+}
+
+h1 {
+  margin: .67em 10px;
+  border-bottom: 1px dashed $darkbrown;
+  padding: 10px 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'alegreya_sansbold';
+  font-weight: normal;
+}
+
+/* ====== Images ====== */
+
+/*Slideshow*/
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+  }
+  img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+  }
+}
+
+
+img {
+  max-width:100%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+
+
+/* ====== Media Queries ====== */
+
+@media only screen and (min-width: 960px) and (max-width: 1100px) {
+
+  .wrapper, .footer {
+    max-width: 880px;
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+
+  .wrapper, .footer {
+    max-width: 708px;
+  }
+
+
+  header {
+    height: 2em;
+    margin-bottom: 20px;
+  }
+
+  nav li + li {
+    margin-left: 2%;
+  }
+
+  .rslides img {
+    margin-top: 0;
+  }
+
+  .sidebar {
+    margin-top:1em;
+    padding: 20px 0 20px 0;
+    p {
+      margin:1em 20px 0 20px;
+    }
+    h2 {
+      margin:0 20px ;
+    }
+  }
+
+}
+
+@media only screen and (min-width: 580px) and (max-width: 767px) {
+
+
+  .wrapper, .footer {
+    max-width: 500px;
+  }
+
+  header {
+    height: 4em;
+    margin-bottom: 20px;
+  }
+
+  nav li + li {
+    margin-left: 2%;
+  }
+
+  .rslides img {
+    margin-top: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin: 1em 0 0 0;
+    padding: 20px 0 40px 0;
+    float: none;
+  }
+
+  .main-content {
+    margin: 0;
+    width: 100%;
+    float: none;
+
+  }
+
+
+}
+
+
+@media only screen and (max-width: 579px) {
+
+  .wrapper, .footer {
+    max-width: 260px;
+  }
+
+  header {
+    height: 6em;
+  }
+
+  nav li + li {
+    margin-left: 5%;
+  }
+
+  .rslides img {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin: 1em 0 0 0;
+    padding: 20px 0 40px 0;
+    float: none;
+  }
+
+  .main-content {
+    margin: 0;
+    width: 100%;
+    float: none;
+
+  }
+
+  h1 {
+    margin:10px;
+
+  }
+}
+
+
